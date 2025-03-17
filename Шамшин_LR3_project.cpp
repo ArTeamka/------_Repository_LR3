@@ -9,8 +9,12 @@ void Task1() {
 }
 
 void Task2() {
-    // Реализация задания 2
-    cout << "Результат задания 2" << endl;
+    int num;
+    cout << "Введите трехзначное число: ";
+    cin >> num;
+    int secondDigit = (num / 10) % 10;
+    int thirdDigit = num % 10;
+    cout << "Произведение второй и третьей цифр: " << secondDigit * thirdDigit << endl;
 }
 
 int main() {
